@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href="styles2.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="isaac.js" defer></script>
 
-</head>
+</head >
 <body>
-    <!-- From Uiverse.io by akshat-patel28 --> 
- <div class="form-container">
-      <p class="title">Create account</p>
-      <p class="sub-title">Let's get statred with your 30 days free trial</p>
-      <form class="form">
-        <input type="text" class="input" placeholder="Name">
-        <input type="email" class="input" placeholder="Email">
-        <input type="password" class="input" placeholder="Password">
-        <button class="form-btn">Create account</button>
+     <div class="form-container">
+      <p class="title">Welcome</p>
+      <form class="form" action="/login" method="POST">
+        <input type="text"  class="input" placeholder="Email" required>
+        <input type="password" class="input" placeholder="Password" required>
+        <p class="page-link">
+          <span class="page-link-label">Forgot Password?</span>
+        </p>
+        <button type="submit" class="form-btn" >Log in</button>
       </form>
       <p class="sign-up-label">
-        Already have an account?<a href="index.html" class="sign-up-link">Log in</a>
+        Don't have an account?<a href="signup.html" class="sign-up-link">Sign up</a>
       </p>
+
       <div class="buttons-container">
-       
+
         <div class="google-login-button">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
@@ -35,10 +38,9 @@
             <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
 	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
           </svg>
-          <span>Sign up with Google</span>
+          <span>Log in with Google</span>
         </div>
       </div>
     </div>
-    
 </body>
 </html>
